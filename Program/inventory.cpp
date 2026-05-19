@@ -1,10 +1,6 @@
 #include "inventory.h"
 
 
-// =====================================================
-// ALERT
-// =====================================================
-
 void showAlert(const std::string& msg, bool success) {
 
     alertMsg = msg;
@@ -12,9 +8,7 @@ void showAlert(const std::string& msg, bool success) {
     alertTimer = 180;
 }
 
-// =====================================================
-// VALIDATION
-// =====================================================
+
 
 bool idExists(int id) {
 
@@ -62,9 +56,6 @@ bool isAllDigit(const std::string& s){
     return true;
 }
 
-// =====================================================
-// SORTING
-// =====================================================
 
 void bubbleSortNama(bool asc) {
 
@@ -144,9 +135,6 @@ void insertionSortID() {
     }
 }
 
-// =====================================================
-// SEARCHING
-// =====================================================
 
 int binarySearchNama(const std::string& nama) {
 
@@ -211,9 +199,6 @@ int sequentialSearchID(int id) {
     return -1;
 }
 
-// =====================================================
-// STATUS COLOR
-// =====================================================
 
 Color StatusColor(const std::string& s){
 

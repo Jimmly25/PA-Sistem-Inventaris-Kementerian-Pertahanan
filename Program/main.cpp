@@ -6,9 +6,7 @@
 #include "user.h"
 #include "inventory.h"
 
-// =====================================================
-// GLOBAL VARIABLE
-// =====================================================
+
 
 std::vector<Inventaris> dataInventaris;
 
@@ -38,9 +36,6 @@ int searchResultIdx = -1;
 
 std::string searchMsg = "";
 
-// =====================================================
-// INPUT BUFFER
-// =====================================================
 
 char inputUsername[64] = "";
 char inputPassword[64] = "";
@@ -50,9 +45,7 @@ char inputJumlah[16] = "";
 char inputId[16] = "";
 char inputCabangSel[32] = "TNI_AD";
 
-// =====================================================
-// COLORS
-// =====================================================
+
 
 Color C_BG      = GetColor(0x020B18FF);
 Color C_CARD    = GetColor(0x08182AFF);
@@ -81,7 +74,6 @@ int main() {
         InitWindow(1100, 700, "Sistem Inventaris Kementerian / TNI");
         SetTargetFPS(60);
 
-        // Sample data
         dataInventaris = { };
 
         while (!WindowShouldClose()) {
