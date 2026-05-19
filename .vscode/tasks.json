@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Raylib",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-o",
+        "Program/main",
+        "Program/*.cpp",
+        "-Wall",
+        "-std=c++14",
+        "-D_DEFAULT_SOURCE",
+        "-Wno-missing-braces",
+        "-g",
+        "-O0",
+        "-IC:/raylib/raylib/src",
+        "-IC:/raylib/raylib/src/external",
+        "-LC:/raylib/raylib/src",
+        "-lraylib",
+        "-lopengl32",
+        "-lgdi32",
+        "-lwinmm",
+        "-DPLATFORM_DESKTOP"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
